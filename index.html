@@ -225,12 +225,13 @@ input,textarea{font-family:inherit;outline:none;}
   position:absolute;inset:0;z-index:0;
 }
 .hero-video-wrap video{
+  position:relative;z-index:1;
   width:100%;height:100%;object-fit:cover;
   filter:brightness(0.28) saturate(1.4);
 }
 /* Fallback animated background when no video */
 .hero-video-fallback{
-  position:absolute;inset:0;
+  position:absolute;inset:0;z-index:0;
   background:
     radial-gradient(ellipse 80% 70% at 65% 45%,rgba(255,107,0,0.13) 0%,transparent 70%),
     linear-gradient(160deg,#000 0%,#0d0500 50%,#000 100%);
@@ -1087,9 +1088,9 @@ footer{
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <a class="nav-social-link" href="#" data-cursor="Instagram">📸</a>
-    <a class="nav-social-link" href="#" data-cursor="YouTube">▶</a>
-    <a class="nav-social-link" href="#" data-cursor="Twitter">𝕏</a>
+    <a class="nav-social-link" href="#" data-cursor="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a class="nav-social-link" href="#" data-cursor="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    <a class="nav-social-link" href="#" data-cursor="Twitter"><i class="fa-brands fa-facebook"></i></a>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -1113,8 +1114,8 @@ footer{
   <div class="hero-video-wrap">
     <video autoplay muted loop playsinline id="heroBgVideo">
       <!-- Using a free esports/dark atmospheric video from picsum/unsplash video alternatives -->
-      <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-futuristic-devices-99786-large.mp4" type="video/mp4"/>
-      <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-technology-connection-network-7111-large.mp4" type="video/mp4"/>
+      <source src="BG-IMPx.mp4" type="video/mp4"/>
+      <source src="BG-IMPx.mp4" type="video/mp4"/>
     </video>
     <!-- Animated fallback always shown as overlay -->
     <div class="hero-video-fallback"></div>
@@ -1439,13 +1440,13 @@ footer{
             </div>
           </div>
           <div class="team-info">
-            <div class="team-role">league operator</div>
+            <div class="team-role">League Operations Manager</div>
             <div class="team-name">fahad</div>
           </div>
         </div>
         <div class="team-card">
           <div class="team-photo">
-            <img src="web image/goltu.png" alt="goltu" class="team-photo-img">
+            <img src="web image/goltu.png" alt="SADMAN Sakib Khan Sourav" class="team-photo-img">
             <div class="team-photo-bg"></div>
             <div class="team-overlay">
               <a class="team-soc-btn" href="#">f</a>
@@ -1454,13 +1455,13 @@ footer{
             </div>
           </div>
           <div class="team-info">
-            <div class="team-role">co founder</div>
-            <div class="team-name">goltu</div>
+            <div class="team-role">Cheif Operating Officer</div>
+            <div class="team-name">Sadman Sakib Khan Sourav</div>
           </div>
         </div>
         <div class="team-card featured">
           <div class="team-photo">
-            <img src="web image/topon.png" alt="apon aslam" class="team-photo-img">
+            <img src="web image/topon.png" alt="Aslam Ahammed Apon" class="team-photo-img">
             <div class="team-photo-bg"></div>
             <div class="team-overlay">
               <a class="team-soc-btn" href="#">f</a>
@@ -1470,8 +1471,8 @@ footer{
             </div>
           </div>
           <div class="team-info">
-            <div class="team-role">founder of impact x</div>
-            <div class="team-name">apon aslam</div>
+            <div class="team-role">Cheif Exectutive Officer</div>
+            <div class="team-name">Aslam Ahammed Apon</div>
           </div>
         </div>
         <div class="team-card">
@@ -1486,7 +1487,7 @@ footer{
           </div>
           <div class="team-info">
             <div class="team-role">head of visuals</div>
-            <div class="team-name">Jmahadi hassan</div>
+            <div class="team-name">mahadi hassan</div>
           </div>
         </div>
         <div class="team-card">
@@ -1500,7 +1501,7 @@ footer{
             </div>
           </div>
           <div class="team-info">
-            <div class="team-role">head of management</div>
+            <div class="team-role">head of LEAGUE OPERATIONS</div>
             <div class="team-name">Mira Jahan</div>
           </div>
         </div>
@@ -1515,7 +1516,7 @@ footer{
             </div>
           </div>
           <div class="team-info">
-            <div class="team-role">management</div>
+            <div class="team-role">management LEAD</div>
             <div class="team-name">Fahim Bhuiyan</div>
           </div>
         </div>
@@ -1530,8 +1531,38 @@ footer{
             </div>
           </div>
           <div class="team-info">
-            <div class="team-role">head of league operator </div>
+            <div class="team-role">Head of Logistics</div>
             <div class="team-name">Simanto</div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="web image/walid.png" alt="Walid" class="team-photo-img">
+            <div class="team-photo-bg"></div>
+            <div class="team-overlay">
+              <a class="team-soc-btn" href="#">f</a>
+              <a class="team-soc-btn" href="#">in</a>
+              <a class="team-soc-btn" href="#">𝕏</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <div class="team-role">social media manager</div>
+            <div class="team-name">Walid</div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="web image/sadman.png" alt="Sadman" class="team-photo-img">
+            <div class="team-photo-bg"></div>
+            <div class="team-overlay">
+              <a class="team-soc-btn" href="#">f</a>
+              <a class="team-soc-btn" href="#">in</a>
+              <a class="team-soc-btn" href="#">𝕏</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <div class="team-role">management LEAD</div>
+            <div class="team-name">Sadman</div>
           </div>
         </div>
         
@@ -1586,14 +1617,15 @@ footer{
           <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
           <div class="contact-info-text">
             <strong>Email</strong>
-            <a href="mailto:impactxlimited@gmail.com">impactxlimited@gmail.com</a>
+            <a href="mailto:impactxlimited@gmail.com">impactxltd@gmail.com</a>
           </div>
         </div>
         <div class="contact-info-item">
           <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
           <div class="contact-info-text">
             <strong>Phone</strong>
-            <span>+880 1885903515</span>
+            <span>+8801410859765</span>
+
           </div>
         </div>
         <div class="contact-info-item">
@@ -1650,7 +1682,7 @@ footer{
     </div>
     <div>
       <h4 class="footer-col-title">Connect</h4>
-      <p class="footer-email"><i class="fa-solid fa-envelope"></i> <a href="mailto:impactxlimited@gmail">impactxlimited@gmail</a></p>
+      <p class="footer-email"><i class="fa-solid fa-envelope"></i> <a href="mailto:impactxltd@gmail.com">impactxltd@gmail.com</a></p>
       <div class="footer-social">
         <a class="footer-soc-btn" href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" data-cursor="TikTok"><i class="fa-brands fa-tiktok"></i></a>
         <a class="footer-soc-btn" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" data-cursor="Facebook"><i class="fa-brands fa-facebook"></i></a>
@@ -1660,8 +1692,8 @@ footer{
     </div>
   </div>
   <div class="footer-addr" style="margin-bottom:clamp(16px,2vw,24px);">
-    <strong>Address:</strong>  House 77 Rd No 9, Dhaka 1212 &nbsp;·&nbsp; <strong>Phone:</strong> +880 1885903515
-  </div>
+    <strong>Address:</strong>  House 77 Rd No 9, Dhaka 1212 &nbsp;·&nbsp; <strong>Phone:</strong> +8801410859765
+
   <div class="footer-bottom">
     <p class="footer-bottom-left">Copyright © 2024 — All rights reserved by <a href="#">ImpactX</a></p>
     <p class="footer-bottom-right">PRECISE VISION · EXPONENTIAL EXECUTION</p>
